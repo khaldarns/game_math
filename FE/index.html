@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Challenge Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Math Challenge</h1>
+  <p>Use numbers 1 to 10 exactly once to get close to:</p>
+  <div id="targetNumber"></div>
+  <div id="expression"></div>
+  <div class="buttons">
+    <div id="numberButtons"></div>
+    <div id="operatorButtons">
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendOperator('*')">*</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button onclick="appendOperator('^')">^</button>
+    </div>
+    <button id="deleteBtn">Delete</button>
+    <button id="submitBtn">Submit</button>
+    <div id="result"></div>
+    <p id="timer">⏱️ 45</p>
+    <button id="playAgainBtn" style="display:none;">Play Again</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
